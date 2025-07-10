@@ -1,3 +1,4 @@
+
 # Envy Hospital Website
 
 Welcome to the Envy Hospitals website repository – a responsive, modern, and accessible healthcare platform. This project provides a comprehensive hospital management system, allowing patients to browse departments, view doctors, book appointments via a secure backend.

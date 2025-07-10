@@ -11,6 +11,9 @@ const routespost=require('./routes/appointment');
 connectDb();
 app.use('/api/user',routesget);
 app.use('/api/user',routespost);
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "build", "index.html"));
+});
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`server is running on ${PORT}`);
 });
