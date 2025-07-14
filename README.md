@@ -33,6 +33,9 @@ Welcome to the Envy Hospitals website repository – a responsive, modern, and a
 ## screenshot(mobile) of website
 <img src="./client//src/Mycomponent/Images/localhost_3000_ (4).png" alt="Screenshot" height="300">
 
+## screenshot(large/medium screen) of website
+<img src="./client//src/Mycomponent/Images/localhost_3000_ (5).png" alt="Screenshot" height="300">
+
 ## Technology 
 - React
      - Front-end framework
