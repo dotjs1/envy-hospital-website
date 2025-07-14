@@ -15,7 +15,7 @@ Welcome to the Envy Hospitals website repository – a responsive, modern, and a
 - Modern, Responsive UI
     - Designed with React and Bootstrap for a clean and adaptable layout across all devices.
 
-- Backend Integration with MongoDB**  
+- Backend Integration with MongoDB
     - All appointment data is stored in a MongoDB database via a secure Node.js/Express API.
 
 - API-Driven Architecture  
