@@ -83,7 +83,7 @@ Welcome to the Envy Hospitals website repository – a responsive, modern, and a
         - npm run dev
 
 - Frontend (e.g., on port 3000)
-    - cd ..
+    - cd ..client
         - npm start
 
 ## Contributing
