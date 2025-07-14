@@ -31,7 +31,7 @@ Welcome to the Envy Hospitals website repository – a responsive, modern, and a
     - Follows basic accessibility practices including keyboard support and ARIA roles.
 
 ## screenshot(mobile) of website
-  ![Alt text](./client/src/Mycomponent/Images/screenshot.png)
+  <img src="./client/src/Mycomponent/Images/screenshot.png" alt="Screenshot" width="400" height="400/>
 
 
 ## Technology 
