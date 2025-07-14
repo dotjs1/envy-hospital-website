@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* Header---css */
+@media screen and (max-width: 1000px) {
+  .form_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn{
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .form_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}
+/* Appointment_section-csss */
+.appointment_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+/* why choose us---css */
+.container_why {
+  padding: 20px;
+}
+
+.Choose {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gradient-card-1 {
+  background: linear-gradient(135deg, #cef2f7, #ffffff);
+}
+
+.gradient-card-2 {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+.card {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+/* location--css */
+.location-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.location-card:hover,.card-hover-effect:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+/* departments--css */
+.Department{
+background: #F0F2F0;
+background: linear-gradient(to right, #F0F2F0 ,#061d85);
+padding: 50px;
+}
+/* appointment ---css */
+@media (max-width: 768px) {
+  .leftdiv, .rightdiv {
+    width: 100% !important;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
