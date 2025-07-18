@@ -28,7 +28,7 @@ const Appointment = () => {
 
   const fetchDoctors = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/user/doctordata');
+      const response = await fetch('https://envy-hospital-website-server.onrender.com/api/user/doctordata');
       if (!response.ok) throw new Error('Failed to fetch doctors');
       const data = await response.json();
       setDoctors(data.data || []);
@@ -39,7 +39,7 @@ const Appointment = () => {
 
   const postAppointment = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/user/patient', {
+      const response = await fetch('https://envy-hospital-website-server.onrender.com/api/user/patient', {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -21,7 +21,7 @@ const Finddoctors = () => {
     const FetchApi = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:5000/api/user/doctordata');
+        const response = await fetch('https://envy-hospital-website-server.onrender.com/api/user/doctordata');
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
         const data = await response.json();
         setData(data.data || []);
