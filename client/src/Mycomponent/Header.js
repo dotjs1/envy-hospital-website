@@ -37,8 +37,8 @@ const Header = () => {
             </li>
           </ul>
           <form  className=" form_buttons gap-3 px-4" role="search">
-            <button className="btn btn-success rounded" type="button">Signup</button>
-            <button className="btn btn-outline-primary rounded" type="button">Login</button>
+            <Link className="btn  btn-outline-primary rounded" type="button" to="/signup">Signup</Link>
+            <Link className="btn btn-success rounded" type="button" to="/login">Login</Link>
           </form>
         </div>
       </div>

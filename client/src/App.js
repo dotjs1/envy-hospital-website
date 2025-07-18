@@ -13,6 +13,8 @@ import Aboutus from './Mycomponent/Aboutus';
 import AboutWebsite from './Mycomponent/Aboutsite';
 import Location from './Mycomponent/Location';
 import ContactUs from './Mycomponent/contact';
+import Signup from './Mycomponent/Signup';
+import Login from './Mycomponent/Login';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   useEffect(() => {
@@ -28,6 +30,8 @@ function App() {
       <Route path='/appointment' element={ <Appointment/>}/>
       <Route path='/department' element={ <Department/>}/>
       <Route path='/doctors' element={   <Finddoctors/>}/>
+      <Route path='/login' element={   <Login/>}/>
+      <Route path='/signup' element={   <Signup/>}/>
       <Route path='/aboutus' element={  <Aboutus/>}/>
       <Route path='/aboutsite' element={  <AboutWebsite/>}/>
       <Route path='/locations' element={  <Location/>}/>

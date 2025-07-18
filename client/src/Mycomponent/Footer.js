@@ -48,7 +48,7 @@ const Footer = () => {
           {/* Actions */}
           <Col xs={12} md={4} className="d-flex flex-column align-items-center align-items-md-start gap-3">
             <Link to='/doctors' className="btn btn-light rounded-pill w-75">Find a Doctor</Link>
-            <a href="#" className="btn btn-light rounded-pill w-75">Login</a>
+            <Link href="#" className="btn btn-light rounded-pill w-75" to="/login">Login</Link>
             <Link to="/department" className="btn btn-light rounded-pill w-75">Departments</Link>
           </Col>
         </Row>
