@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import AppointmentForm from './Mycomponents/Appointmentform';
+// import DoctorList from './client/src/components/DoctorList';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div className="container">
+                    <a className="navbar-brand" href="#">Hospital Appointment</a>
+                </div>
+            </nav>
+            <div className="container mt-5">
+                <div className="row">
+                    <div className="col-md-6"><AppointmentForm /></div>
+                    {/* <div className="col-md-6"><DoctorList /></div> */}
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;

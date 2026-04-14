@@ -4,6 +4,7 @@ const routes=express.Router();
 
 routes.post('/patient',async(req,res)=>{
     console.log(req.body);
+
 const {ptname,ptemail,ptnumber,doctorname,dateofappointment}=req.body;
 if (!ptname || !ptemail || !ptnumber || !doctorname || !dateofappointment) {
   return res.status(400).json({ error: 'All fields are required' });
