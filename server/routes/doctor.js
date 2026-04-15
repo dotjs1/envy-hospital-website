@@ -18,22 +18,7 @@ connectDb();
 // Defining a Mongoose Schema for the "saves" collection;
 const SaveSchema = new mongoose.Schema({}, { strict: false }); // Flexible schema
 const SaveModel = mongoose.model("Save", SaveSchema, "saves"); 
-// Fetching Data
-// async function fetchData() {
-//     await connectDb();
 
-//     try {
-//         const collectionData = await SaveModel.find(); // Corrected query
-//         console.log(collectionData);
-//     } catch (error) {
-//         console.error("Error fetching data:", error.message);
-//     } finally {
-//         mongoose.connection.close(); // Close the connection
-//     }
-// }
-
-// // Run fetchData
-// fetchData();
 routes.get('/doctordata',async(req,res)=>{
 try{
 const collectionData=await SaveModel.find();

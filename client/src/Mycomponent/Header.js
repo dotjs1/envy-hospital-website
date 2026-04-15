@@ -1,11 +1,15 @@
-import React from 'react';
-import logo from './logo/2f3879a390a441a08a14b40cceb5e761-free.png'
-import {Link} from 'react-router-dom'
+import logo from './logo/2f3879a390a441a08a14b40cceb5e761-free.png';
+import { Link } from 'react-router-dom';
+
 const Header = () => {
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
       <div className="container-fluid">
-        <Link className="navbar-brand d-flex align-items-center gap-2" to='/'><img src={logo} alt='Envy Hospitals alt' style={{height:'60px'}}></img><strong>Envy Hospitals</strong></Link>
+        <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
+          <img src={logo} alt="Envy Hospitals" style={{ height: '60px' }} />
+          <strong>Envy Hospitals</strong>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,25 +25,25 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to='/'>Home</Link>
+              <Link className="nav-link active" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to='/aboutus'>About Us</Link>
+              <Link className="nav-link" to="/aboutus">About Us</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/doctors">Find Doctors</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to='/department'>Our Department</Link>
+              <Link className="nav-link" to="/department">Our Department</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Blog</a>
             </li>
           </ul>
-          <form  className=" form_buttons gap-3 px-4" role="search">
-            <Link className="btn  btn-outline-primary rounded" type="button" to="/signup">Signup</Link>
-            <Link className="btn btn-success rounded" type="button" to="/login">Login</Link>
-          </form>
+          <div className="d-flex gap-3 px-4">
+            <Link className="btn btn-outline-primary rounded" to="/signup">Signup</Link>
+            <Link className="btn btn-success rounded" to="/login">Login</Link>
+          </div>
         </div>
       </div>
     </nav>

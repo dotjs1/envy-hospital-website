@@ -21,8 +21,9 @@ const Finddoctors = () => {
     const FetchApi = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/user/doctordata`);
+       const response = await fetch(`${process.env.REACT_APP_API_URL}/api/user/doctordata`);
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        console.log("API URL is:", process.env.REACT_APP_API_URL);
         const data = await response.json();
         setData(data.data || []);
       } catch (error) {

@@ -1,7 +1,9 @@
 require('dotenv').config();
 const express=require('express');
 const cors=require('cors');
-const path = require('path'); 
+
+const path=require('path');
+const __dirname = path.resolve();
 const PORT=process.env.PORT||5000;
 const app=express();
 app.use(cors());
@@ -12,9 +14,9 @@ const routespost=require('./routes/appointment');
 connectDb();
 app.use('/api/user',routesget);
 app.use('/api/user',routespost);
-app.use(express.static(path.join(__dirname, "build")));
+app.use(express.static(path.join(__dirname, "client/build")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`server is running on ${PORT}`);
